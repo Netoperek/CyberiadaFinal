@@ -4,18 +4,21 @@ using UnityEngine;
 
 public class PlatformMenager : MonoBehaviour
 {
+    [SerializeReference] Score score;
 
     [field: SerializeReference] public static PlatformMenager curent { get; private set; }
     [SerializeReference] private GameObject LastGameObject;
     [field: SerializeField] public float speed { get; private set; }
-    [SerializeField]Material m_Material_01;
-    [SerializeField]Material m_Material_02;
-    [SerializeField]Material m_Material_03;
-    [SerializeField]Material m_Material_04;
-    [SerializeField]Material m_Material_05;
-    [SerializeField]Material m_Material_06;
-    [SerializeField]Material m_Material_07;
-    [SerializeField]Material m_Material_08;
+    [SerializeField] Material m_Material_01;
+    [SerializeField] Material m_Material_02;
+    [SerializeField] Material m_Material_03;
+    [SerializeField] Material m_Material_04;
+    [SerializeField] Material m_Material_05;
+    [SerializeField] Material m_Material_06;
+    [SerializeField] Material m_Material_07;
+    [SerializeField] Material m_Material_08;
+
+    bool[] isbools = { false, false, false, false, false, false, false, false, };
 
     [field: SerializeReference] public Vector3 Offset { get; private set; }
     [field: SerializeReference] List<GameObject> Platforms_01 { get; set; }
@@ -30,6 +33,43 @@ public class PlatformMenager : MonoBehaviour
                 LastGameObject = Platforms_01[i];
                 Platforms_01[i].SetActive(true);
                 Platforms_01[i].GetComponent<MovePlatform>().StartMove();
+                if (score.GetScore() > 40 && score.GetScore() < 60)
+                {
+                    if (isbools[0] == false)
+                    {
+                        Platforms_01[i].GetComponent<MeshRenderer>().sharedMaterial = m_Material_02;
+                        isbools[0] = true;
+                    }
+                    else
+                    {
+                        Platforms_01[i].GetComponent<MeshRenderer>().sharedMaterial = m_Material_03;
+                    }
+                }
+                else if (score.GetScore() > 60 && score.GetScore() < 100)
+                {
+                    if (isbools[1] == false)
+                    {
+                        Platforms_01[i].GetComponent<MeshRenderer>().sharedMaterial = m_Material_04;
+                        isbools[1] = true;
+                    }
+                    else
+                    {
+                        Platforms_01[i].GetComponent<MeshRenderer>().sharedMaterial = m_Material_05;
+                    }
+                }
+                else if (score.GetScore() > 100 && score.GetScore() < 200)
+                {
+                    if (isbools[2] == false)
+                    {
+                        Platforms_01[i].GetComponent<MeshRenderer>().sharedMaterial = m_Material_06;
+                        isbools[2] = true;
+                    }
+                    else
+                    {
+                        Platforms_01[i].GetComponent<MeshRenderer>().sharedMaterial = m_Material_07;
+                    }
+                }
+
             }
         }
     }

@@ -1760,8 +1760,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a186e5137c4b044eb2b3b7477640ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 2111203323}
   LastGameObject: {fileID: 2093547089}
   <speed>k__BackingField: 0.25
+  m_Material_01: {fileID: 2100000, guid: 5cc88ce7e9b176e4a952590833449840, type: 2}
+  m_Material_02: {fileID: 2100000, guid: ee4e9e72f97ac1443a6ca65cb775dafa, type: 2}
+  m_Material_03: {fileID: 2100000, guid: 37ec2ddabf607ef46801977e417a9b99, type: 2}
+  m_Material_04: {fileID: 2100000, guid: a5cb1331b884d374e8c66d643ea9450d, type: 2}
+  m_Material_05: {fileID: 2100000, guid: 51ec7a33fa180b04ba4a11d2ddf1098d, type: 2}
+  m_Material_06: {fileID: 2100000, guid: fba5be62f1f1e2f4a92c7ff3f4fd09f9, type: 2}
+  m_Material_07: {fileID: 2100000, guid: 68148cfe3d17e5f4c95431eee9cf4e1e, type: 2}
+  m_Material_08: {fileID: 2100000, guid: d1a8ad8ab85f8094dba3c4a3602706a9, type: 2}
   <Offset>k__BackingField: {x: 0, y: 0, z: 100}
   <Platforms_01>k__BackingField:
   - {fileID: 1152743406}
