@@ -12,6 +12,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: M_atlas_enviro_1K.008
+    second: {fileID: 2100000, guid: 85f935c831d193e449e974757bab560a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material.001
     second: {fileID: 2100000, guid: 5cc88ce7e9b176e4a952590833449840, type: 2}
   - first:
