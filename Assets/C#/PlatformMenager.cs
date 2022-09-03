@@ -6,9 +6,9 @@ public class PlatformMenager : MonoBehaviour
 {
 
     [field: SerializeReference] public static PlatformMenager curent { get; private set; }
-    [SerializeReference] private Transform LastGameObject;
+    [SerializeReference] private GameObject LastGameObject;
     [field: SerializeField] public float speed { get; private set; }
-   
+
 
     [field: SerializeReference] public Vector3 Offset { get; private set; }
     [field: SerializeReference] List<GameObject> Platforms_01 { get; set; }
@@ -18,8 +18,9 @@ public class PlatformMenager : MonoBehaviour
         {
             if (Platforms_01[i].activeSelf == false)
             {
-                Platforms_01[i].transform.position = LastGameObject.position + Offset;
-                LastGameObject = Platforms_01[i].GetComponent<Transform>();
+
+                Platforms_01[i].transform.position = LastGameObject.transform.position + Offset;
+                LastGameObject = Platforms_01[i];
                 Platforms_01[i].SetActive(true);
                 Platforms_01[i].GetComponent<MovePlatform>().StartMove();
             }
@@ -67,7 +68,6 @@ public class PlatformMenager : MonoBehaviour
             curent = this;
         }
 
-        LastGameObject = Platforms_01[0].GetComponent<Transform>();
         OnaNextPlatform += MoveOnEnd;
     }
     private void OnDisable()

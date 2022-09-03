@@ -41,7 +41,7 @@ Transform:
   - {fileID: 8469459016277607737}
   - {fileID: 8469459016085743598}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &397656297881574121
 PrefabInstance:
@@ -118,6 +118,10 @@ PrefabInstance:
     - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_Name
       value: coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
@@ -247,6 +251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -310,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_Name
       value: coin (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
@@ -375,6 +387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -439,6 +455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -502,6 +522,10 @@ PrefabInstance:
     - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_Name
       value: coin (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
@@ -631,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -695,6 +723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -758,6 +790,10 @@ PrefabInstance:
     - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_Name
       value: coin (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4538747029981894418, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7132123460179952430, guid: ccef2ff485b43cc40a0dd6f07d9b03c6, type: 3}
       propertyPath: m_RootOrder

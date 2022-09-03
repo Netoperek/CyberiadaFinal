@@ -3,7 +3,22 @@ guid: ba539b2ffc4ceb84fa66e1c5d4810b4a
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_atlas_enviro_1K
+    second: {fileID: 2100000, guid: 4a2b75ccdf6ead44781e213b000bcb4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 5cc88ce7e9b176e4a952590833449840, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 5cc88ce7e9b176e4a952590833449840, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
