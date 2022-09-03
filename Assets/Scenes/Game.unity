@@ -2692,12 +2692,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 862230546794000309, guid: 0308c685be3fbf44db9ecfb93bd0041b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2856520630299742453, guid: 0308c685be3fbf44db9ecfb93bd0041b, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7164037169666842305, guid: 0308c685be3fbf44db9ecfb93bd0041b, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7212264196927335620, guid: 0308c685be3fbf44db9ecfb93bd0041b, type: 3}
+      propertyPath: m_fontStyle
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7630378698297342414, guid: 0308c685be3fbf44db9ecfb93bd0041b, type: 3}

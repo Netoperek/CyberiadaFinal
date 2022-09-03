@@ -89,13 +89,13 @@ public class PlatformMenager : MonoBehaviour
                 speed = 1.25f;
                 break;
             case 60:
-                speed = 1.25f;
+                speed = 1.5f;
                 break;
             case 100:
-                speed = 2.25f;
+                speed = 2f;
                 break;
             case 200:
-                speed = 3f;
+                speed = 2.5f;
                 break;
             default:
                 break;
