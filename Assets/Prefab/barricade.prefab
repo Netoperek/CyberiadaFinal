@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210298001916894216}
   - component: {fileID: 5235166949695096580}
-  - component: {fileID: 387252804861284601}
+  - component: {fileID: 4951167854918096828}
   m_Layer: 0
   m_Name: barricade
   m_TagString: Untagged
@@ -42,24 +42,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371843805620267345}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &387252804861284601
+--- !u!114 &4951167854918096828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371843805620267345}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 858c3634563f9734f8606ce3d91d847a, type: 3}
+  m_Script: {fileID: 11500000, guid: 78b992ecfcef5de4c882c4a561ae5f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstacleItam: {fileID: 3901319766062055665}
 --- !u!1001 &4243847125816573344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,11 +118,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d3ffb6b18f4c8e46a069b210f3d9f48, type: 3}
---- !u!1 &3901319766062055665 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d3ffb6b18f4c8e46a069b210f3d9f48, type: 3}
-  m_PrefabInstance: {fileID: 4243847125816573344}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4426920805857139275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d3ffb6b18f4c8e46a069b210f3d9f48, type: 3}
