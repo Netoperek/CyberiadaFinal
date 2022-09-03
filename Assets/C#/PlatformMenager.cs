@@ -4,10 +4,59 @@ using UnityEngine;
 
 public class PlatformMenager : MonoBehaviour
 {
+
     [field: SerializeReference] public static PlatformMenager curent { get; private set; }
-    private Transform LastGameObject;
+    [SerializeReference] private Transform LastGameObject;
     [field: SerializeField] public float speed { get; private set; }
-    private void Awake()
+   
+
+    [field: SerializeReference] public Vector3 Offset { get; private set; }
+    [field: SerializeReference] List<GameObject> Platforms_01 { get; set; }
+    private void MoveOnEnd()
+    {
+        for (int i = 0; i < Platforms_01.Count; i++)
+        {
+            if (Platforms_01[i].activeSelf == false)
+            {
+                Platforms_01[i].transform.position = LastGameObject.position + Offset;
+                LastGameObject = Platforms_01[i].GetComponent<Transform>();
+                Platforms_01[i].SetActive(true);
+                Platforms_01[i].GetComponent<MovePlatform>().StartMove();
+            }
+        }
+    }
+    public void InvokeOnaNextPlatform()
+    {
+        OnaNextPlatform?.Invoke();
+    }
+
+    public void ChangeSpeed(int switch_on)
+    {
+        switch (switch_on)
+        {
+            case 20:
+                speed = 1f;
+                break;
+            case 40:
+                speed = 1.25f;
+                break;
+            case 60:
+                speed = 1.25f;
+                break;
+            case 100:
+                speed = 2.25f;
+                break;
+            case 200:
+                speed = 3f;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public delegate void Platform();
+    public static Platform OnaNextPlatform;
+    private void OnEnable()
     {
         if (curent != null && curent != this)
         {
@@ -17,16 +66,13 @@ public class PlatformMenager : MonoBehaviour
         {
             curent = this;
         }
+
         LastGameObject = Platforms_01[0].GetComponent<Transform>();
+        OnaNextPlatform += MoveOnEnd;
     }
-
-    [field: SerializeReference] public Vector3 Offset { get; private set; }
-    [field: SerializeReference] List<GameObject> Platforms_01 { get; set; }
-    [field: SerializeReference] List<GameObject> Platforms_02 { get; set; }
-    [field: SerializeReference] List<GameObject> Platforms_03 { get; set; }
-    [field: SerializeReference] List<GameObject> Platforms_04 { get; set; }
-    private void FixedUpdate()
+    private void OnDisable()
     {
-
+        OnaNextPlatform -= MoveOnEnd;
     }
+
 }
