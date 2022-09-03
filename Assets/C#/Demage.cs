@@ -8,7 +8,7 @@ public class Demage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Jeb jeb ale urwa³ XD");
+            other.GetComponent<OpenpopupDead>().Open();
         }
     }
 }

@@ -19,6 +19,10 @@ public class Score : MonoBehaviour
     }
     [field: SerializeField] float speedScore { get; set; }
     private int score = 0;
+    public int GetScore()
+    {
+        return score;
+    }
     [SerializeReference] TMP_Text text;
     private void Start()
     {
@@ -34,6 +38,15 @@ public class Score : MonoBehaviour
             PlatformMenager.curent.ChangeSpeed(score);
             yield return new WaitForSecondsRealtime(speedScore);
         }
+    }
+
+    public void StartCount()
+    {
+        StartCoroutine(ScoreCounter());
+    }
+    public void StopCount()
+    {
+        StopAllCoroutines();
     }
 
 }

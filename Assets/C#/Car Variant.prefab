@@ -5092,23 +5092,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1260332478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7707716325794564032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98c98e99c844e54b8f895c6e7997262, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftPos: {x: -10, y: 2.15, z: 0}
-  centerPos: {x: 0, y: 2.15, z: 0}
-  rightPos: {x: 10, y: 2.15, z: 0}
-  <speedMove>k__BackingField: 1
-  rb: {fileID: 1260332479}
 --- !u!82 &1694672136
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5205,3 +5188,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1260332478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7707716325794564032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98c98e99c844e54b8f895c6e7997262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPos: {x: -10, y: 2.15, z: 0}
+  centerPos: {x: 0, y: 2.15, z: 0}
+  rightPos: {x: 10, y: 2.15, z: 0}
+  <speedMove>k__BackingField: 1
+  rb: {fileID: 1260332479}
+--- !u!114 &1748712341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7707716325794564032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbc4be10955d6a747849d3ead37f596a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popup: {fileID: 0}
+  score: {fileID: 0}
+  text: {fileID: 0}
+  player: {fileID: 1260332478}
