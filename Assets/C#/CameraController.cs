@@ -1,24 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using static UnityEngine.GraphicsBuffer;
+
 public class CameraController : MonoBehaviour
 {
-    [field: SerializeField] float speedScore { get; set; }
-    private float score = 0f;
-    [SerializeReference] TextMeshPro text;
+    [SerializeReference] Transform _player;
+    [SerializeField] float speed;
+    Vector3 _position = Vector3.zero;
     private void Awake()
     {
-        StartCoroutine(Score());
+        _position.z = transform.position.z;
     }
-    IEnumerator Score()
+    private void Update()
     {
-        while (true)
-        {
-            score++;
-            text.text = score.ToString();
+        _position.y = transform.position.y;
+        _position.x = Mathf.Lerp(transform.position.x, _player.position.x, speed * Time.deltaTime);
+        transform.position = _position;
 
-            yield return new WaitForSecondsRealtime(speedScore);
-        }
     }
 }
