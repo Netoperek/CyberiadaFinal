@@ -8,7 +8,14 @@ public class PlatformMenager : MonoBehaviour
     [field: SerializeReference] public static PlatformMenager curent { get; private set; }
     [SerializeReference] private GameObject LastGameObject;
     [field: SerializeField] public float speed { get; private set; }
-
+    [SerializeField]Material m_Material_01;
+    [SerializeField]Material m_Material_02;
+    [SerializeField]Material m_Material_03;
+    [SerializeField]Material m_Material_04;
+    [SerializeField]Material m_Material_05;
+    [SerializeField]Material m_Material_06;
+    [SerializeField]Material m_Material_07;
+    [SerializeField]Material m_Material_08;
 
     [field: SerializeReference] public Vector3 Offset { get; private set; }
     [field: SerializeReference] List<GameObject> Platforms_01 { get; set; }
